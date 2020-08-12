@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(0deg, purple, black);
+}
+
+.calculadora{
+    border: 4px solid #fff;
+    background-color: rgb(37, 37, 34);
+    display: block;
+    margin: 30px auto;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.calculadora td button{
+    background-color: gray;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+}
+
+#resultado{
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
