@@ -2,3 +2,5 @@
 
 <p>Proyecto basico de calculadora utilizando funciones y case para
 realizar las operaciones</p>
+
+<img src="https://github.com/iDvloper/calculadoraWeb/blob/master/img/viewCalculadora.png" align="center">
