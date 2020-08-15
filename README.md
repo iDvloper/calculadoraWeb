@@ -1,3 +1,4 @@
-<h1> Calculadora Basica con JavaScript</h1>
+<h1 align="center"> Calculadora Basica con JavaScript 💻 📱</h1>
 
-Calculadora hecha en Javascript puro, html5 y css
+<p>Proyecto basico de calculadora utilizando funciones y case para
+realizar las operaciones</p>
