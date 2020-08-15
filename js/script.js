@@ -1,3 +1,7 @@
+var num1;
+var num2;
+var operacion;
+
 function init(){
     //Obtener valores de botones
     var resultado = document.getElementById("resultado");
@@ -62,10 +66,77 @@ function init(){
 
     cero.onclick = function(e){
         resultado.textContent = resultado.textContent = "0";
+        
     }
 
     reset.onclick = function(e){
         resetear();
     }
+
+    suma.onclick = function(e){
+        num1 = resultado.textContent;
+        operacion = "+";
+        limpiar();
+    }
+
+    resta.onclick = function(e){
+        num1 = resultado.textContent;
+        operacion = "-"
+        limpiar();
+    }
+
+    multiplicacion.onclick = function(e){
+        num1 = resultado.textContent;
+        operacion = "*";
+        limpiar();
+    }
+
+    division.onclick = function(e){
+        num1 = resultado.textContent;
+        operacion = "/";
+        limpiar();
+    }
+
+    igual.onclick = function(e){
+        num2 = resultado.textContent;
+        resolver();
+    }
+
+    function limpiar(e){
+        resultado.textContent = "";
+    }
+
+    function resetear(e){
+        resultado.textContent = "";
+        num1 = 0;
+        num2 = 0;
+        operacion = "";
+    }
+
+    function resolver(e){
+        var res = 0;
+        switch (operacion) {
+            case "+":
+                res = parseFloat(num1) + parseFloat(num2);
+                break;
+
+            case "-":
+                res = parseFloat(num1) - parseFloat(num2);
+                break;
+                
+            case "*":
+                res = parseFloat(num1) * parseFloat(num2);
+                break;
+                
+            case "/":
+                res = parseFloat(num1) / parseFloat(num2);
+                break;    
+        
+        }
+
+        resetear();
+        resultado.textContent = res;
+    
+    } 
     
 }
